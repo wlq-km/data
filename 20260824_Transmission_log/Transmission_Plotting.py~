@@ -1,0 +1,113 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import csv
+
+
+def read_csv_to_numpy(file_path):
+    # Read data from the second temperature scan
+    
+    column1 = []
+    column2 = []
+    column3 = []
+    column4 = []
+    column5 = []
+
+    # Open the CSV file
+    with open(file_path, mode='r') as file:
+        csv_reader = csv.reader(file)
+
+        # Iterate over each row in the CSV file
+        for row in csv_reader:
+            # Convert the row values to appropriate types and append to the lists
+            column1.append(float(row[0]))
+            column2.append(float(row[1]))
+            column3.append(float(row[2]))
+            column4.append(float(row[3]))
+            column5.append(float(row[4]))
+
+    # Convert the lists to NumPy arrays
+    array1 = np.array(column1)
+    array2 = np.array(column2)
+    array3 = np.array(column3)
+    array4 = np.array(column4)
+    array5 = np.array(column5)
+
+    return array1, array2, array3, array4, array5
+
+
+file_path = "/home/lfcs_user/data/Transmission_log.csv"
+
+timestamp, input_power, output_power, temperature, pressure = read_csv_to_numpy(file_path)
+
+
+# Only plot the data when the laser was locked:
+lock_idx1 = np.arange(0, 3760)
+lock_idx2 = np.arange(6396, 7351)
+lock_idx3 = np.arange(15539, 20378)
+lock_idx4 = np.arange(21758, 24025)
+lock_idx5 = np.arange(26956, 33137)
+lock_idx6 = np.arange(34592, 60014)
+lock_idx7 = np.arange(60081, 60149)
+lock_idx8 = np.arange(61165, 67452)
+lock_idx9 = np.arange(67514, 68451)
+lock_idx10 = np.arange(69483, 75843)
+lock_idx11 = np.arange(77588, 79968)
+lock_idx = np.concatenate((lock_idx1, lock_idx2, lock_idx3, lock_idx4, lock_idx5, lock_idx6, lock_idx7,
+                           lock_idx8, lock_idx9, lock_idx10, lock_idx11))
+lock_idx = np.arange(0, len(timestamp))
+input_power = input_power[lock_idx]
+output_power = output_power[lock_idx]
+
+timestamp -= timestamp[0]
+hours = timestamp/60/60
+days = hours/24
+days_temp = np.copy(days)
+days = days[lock_idx]
+lockidx_temp = temperature[lock_idx]
+
+#input_power /= np.mean(input_power)
+#output_power /= np.mean(output_power)
+norm_power = output_power/input_power
+#norm_power /= np.max(norm_power)
+
+plt.figure()
+plt.subplot(411)
+plt.plot(days, input_power/np.mean(input_power), '.', label="input power")
+plt.plot(days, output_power/np.mean(output_power), '.', label="output power")
+plt.grid()
+plt.legend()
+plt.xlabel("time / days")
+#plt.ylabel("opt. power / mW")
+plt.ylabel("normalised power / a.u.")
+plt.subplot(412)
+z = np.polyfit(days, norm_power, 1)
+p = np.poly1d(z)
+plt.plot(days, norm_power, '.', label="std = " + str(np.round(np.std(norm_power)*100, 3)) + "%")
+#plt.plot(norm_power, '.')
+plt.plot(days, p(days), label="linear fit; slope = " + str(np.round(z[0]*100, 4)) + "%/day")
+#plt.ylim((0.995, 1.005))
+plt.legend()
+plt.grid()
+plt.xlabel("time / days")
+plt.ylabel("transmission")
+plt.subplot(413)
+plt.plot(days_temp, temperature, label="min: " + str(np.round(np.min(temperature), 1)) +
+         "C; max: " + str(np.round(np.max(temperature), 1)) + "C")
+plt.grid()
+plt.legend()
+plt.xlabel("time / days")
+plt.ylabel("temperature / C")
+plt.subplot(414)
+plt.plot(days_temp, pressure)
+plt.grid()
+plt.xlabel("time / days")
+plt.ylabel("barometric pressure / hPa")
+plt.tight_layout()
+plt.show()
+
+plt.figure()
+plt.plot(input_power, norm_power, '.')
+plt.xlabel("input power / mW")
+plt.ylabel("transmission")
+plt.grid()
+plt.show()
