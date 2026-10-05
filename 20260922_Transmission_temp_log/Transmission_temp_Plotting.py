@@ -64,13 +64,14 @@ include[6516:6541] = False
 include[7445:7457] = False
 include[7810:9290] = False
 include[9401:9534] = False
+include[9823:9856] = False
 
 if weed_out:
     plt.figure()
-    #plt.plot(idx[include], tran_plus[include], '.')
+    plt.plot(idx[include], tran_plus[include], '.')
     #plt.plot(idx[include], tran_minus[include], '.')
     #plt.plot(idx[include], tran_max[include], '.')
-    plt.plot(idx[include], central_temp[include], '.')
+    #plt.plot(idx[include], central_temp[include], '.')
     plt.grid()
     plt.show()
 
