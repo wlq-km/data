@@ -1,0 +1,540 @@
+2026-11-16 17:32:43 Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 136, in <module>
+    once()
+    ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 122, in once
+    d, o = load()
+           ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 34, in load
+    o = pd.read_csv(OPT_FILE)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1950, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 238, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2090, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 15 fields in line 3, saw 16
+
+2026-11-16 17:33:43 Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 136, in <module>
+    once()
+    ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 122, in once
+    d, o = load()
+           ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 34, in load
+    o = pd.read_csv(OPT_FILE)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1950, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 238, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2090, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 15 fields in line 3, saw 16
+
+2026-11-16 17:34:43 Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 136, in <module>
+    once()
+    ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 122, in once
+    d, o = load()
+           ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 34, in load
+    o = pd.read_csv(OPT_FILE)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1950, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 238, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2090, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 15 fields in line 3, saw 16
+
+2026-11-16 17:35:43 Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 136, in <module>
+    once()
+    ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 122, in once
+    d, o = load()
+           ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 34, in load
+    o = pd.read_csv(OPT_FILE)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1950, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 238, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2090, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 15 fields in line 3, saw 16
+
+2026-11-16 17:36:43 Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 136, in <module>
+    once()
+    ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 122, in once
+    d, o = load()
+           ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 34, in load
+    o = pd.read_csv(OPT_FILE)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1950, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 238, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2090, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 15 fields in line 3, saw 16
+
+2026-11-16 17:37:43 Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 136, in <module>
+    once()
+    ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 122, in once
+    d, o = load()
+           ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 34, in load
+    o = pd.read_csv(OPT_FILE)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1950, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 238, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2090, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 15 fields in line 3, saw 16
+
+2026-11-16 17:38:43 Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 136, in <module>
+    once()
+    ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 122, in once
+    d, o = load()
+           ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 34, in load
+    o = pd.read_csv(OPT_FILE)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1950, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 238, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2090, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 15 fields in line 3, saw 16
+
+2026-11-16 17:39:43 Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 136, in <module>
+    once()
+    ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 122, in once
+    d, o = load()
+           ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 34, in load
+    o = pd.read_csv(OPT_FILE)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1950, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 238, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2090, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 15 fields in line 3, saw 16
+
+2026-11-16 17:40:43 Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 136, in <module>
+    once()
+    ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 122, in once
+    d, o = load()
+           ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 34, in load
+    o = pd.read_csv(OPT_FILE)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1950, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 238, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2090, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 15 fields in line 3, saw 16
+
+2026-11-16 17:41:43 Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 136, in <module>
+    once()
+    ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 122, in once
+    d, o = load()
+           ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 34, in load
+    o = pd.read_csv(OPT_FILE)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1950, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 238, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2090, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 15 fields in line 3, saw 16
+
+2026-11-16 17:42:43 Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 136, in <module>
+    once()
+    ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 122, in once
+    d, o = load()
+           ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 34, in load
+    o = pd.read_csv(OPT_FILE)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1950, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 238, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2090, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 15 fields in line 3, saw 16
+
+2026-11-16 17:43:43 Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 136, in <module>
+    once()
+    ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 122, in once
+    d, o = load()
+           ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 34, in load
+    o = pd.read_csv(OPT_FILE)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1950, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 238, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2090, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 15 fields in line 3, saw 16
+
+2026-11-16 17:44:43 Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 136, in <module>
+    once()
+    ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 122, in once
+    d, o = load()
+           ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 34, in load
+    o = pd.read_csv(OPT_FILE)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1950, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 238, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2090, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 15 fields in line 3, saw 16
+
+2026-11-16 17:45:43 Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 136, in <module>
+    once()
+    ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 122, in once
+    d, o = load()
+           ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 34, in load
+    o = pd.read_csv(OPT_FILE)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1950, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 238, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2090, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 15 fields in line 3, saw 16
+
+2026-11-16 17:46:43 Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 136, in <module>
+    once()
+    ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 122, in once
+    d, o = load()
+           ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 34, in load
+    o = pd.read_csv(OPT_FILE)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1950, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 238, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2090, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 15 fields in line 3, saw 16
+
+2026-11-16 17:47:43 Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 136, in <module>
+    once()
+    ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 122, in once
+    d, o = load()
+           ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 34, in load
+    o = pd.read_csv(OPT_FILE)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1950, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 238, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2090, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 15 fields in line 3, saw 16
+
+2026-11-16 17:48:43 Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 136, in <module>
+    once()
+    ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 122, in once
+    d, o = load()
+           ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 34, in load
+    o = pd.read_csv(OPT_FILE)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1950, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 238, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2090, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 15 fields in line 3, saw 16
+
+2026-11-16 17:49:43 Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 136, in <module>
+    once()
+    ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 122, in once
+    d, o = load()
+           ~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor_plot.py", line 34, in load
+    o = pd.read_csv(OPT_FILE)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 872, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 306, in _read
+    return parser.read(nrows)
+           ~~~~~~~~~~~^^^^^^^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1950, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        nrows
+        ^^^^^
+    )
+    ^
+  File "/home/lfcs_user/lfcs_venv/lib/python3.13/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 238, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 832, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 897, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 868, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 885, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2090, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 15 fields in line 3, saw 16
+

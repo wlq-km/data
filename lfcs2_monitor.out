@@ -1,0 +1,18 @@
+2026-11-16 15:32:20 start: PM400 THORLABS,PM400,P5006874,1.5.1; T0 = 64.4750 C; pid 3252483
+2026-11-16 15:32:20 first re-optimisation at 16:00
+2026-11-16 15:42:07 SIGTERM received
+2026-11-16 15:42:07 exit: setpoint left at 64.4750 C
+2026-11-16 15:42:09 start: PM400 THORLABS,PM400,P5006874,1.5.1; T0 = 64.4750 C; pid 3257747
+2026-11-16 15:42:09 first re-optimisation at 16:00
+2026-11-16 15:42:45 stop signal SIGTERM
+2026-11-16 15:42:45 exit: setpoint left at 64.4750 C
+2026-11-16 15:43:06 start: PM400 THORLABS,PM400,P5006874,1.5.1; T0 = 64.4750 C; pid 3258287
+2026-11-16 15:43:06 first re-optimisation at 16:00
+2026-11-16 15:53:56 stop signal SIGTERM
+2026-11-16 15:53:56 exit: setpoint left at 64.4750 C
+2026-11-16 15:53:56 start: PM400 THORLABS,PM400,P5006874,1.5.1; T0 = 64.4750 C; pid 3264207
+2026-11-16 15:53:56 first re-optimisation at 16:00
+2026-11-16 16:32:06 cycle: T0 64.4750 -> 64.4386 C (raw offset -28.9 mK, corrected -36.4 mK, drift +2.70%, P 709.9 -> 730.6 uW) 
+2026-11-16 17:32:00 cycle: T0 64.4386 -> 64.4386 C (raw offset +96.8 mK, corrected -656.7 mK, drift -93.61%, P 734.9 -> 41.6 uW) input drift -93.6% too large, reverted to old T0
+2026-11-16 17:56:03 stop signal SIGHUP
+2026-11-16 17:56:03 exit: setpoint left at 64.4386 C
