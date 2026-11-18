@@ -1,0 +1,7 @@
+=== start 2026-11-17 17:00:08 (pid 4052059) ===
+script: /home/lfcs_user/lfcs_code/lfcs2_monitor2.py (repo HEAD 159c532; script itself may be uncommitted)
+setup: LFCS2 cavity with two-wedge system, wedges re-optimised 17 Nov 2026; cavity SN / spring part: (fill in)
+PM400: THORLABS,PM400,P5006874,1.5.1; sensor "S140C","250428420","28-APR-2025",1,18,289; wavelength 795 nm; range 0.0042137 W; averaging 1
+input tap: 269G ch0, P_in[mW] = -0.03021 + 0.0024034 * mV (cal. 17 Nov 2026), 4 S/s
+TEC-1091 SN 25722 (MeCom addr 2); start setpoint 64.1100 C
+cycle: interval 3600 s, delta 0.2 K, HWHM 0.82 K, settle 480 s, avg 120 s, max step 0.1 K, window 63.3..65.0 C
