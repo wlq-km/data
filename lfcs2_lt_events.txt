@@ -1,2 +1,3 @@
 # LFCS2 long-term test event log. One line per event: YYYY-MM-DD HH:MM  who  what
 2026-11-17 17:00  Claude  long-term test started (lfcs2_monitor2.py), setpoint 64.110 C, wedges as re-optimised by Kilian on 17 Nov
+2026-11-18 16:51  Claude  monitor restarted: HWHM 0.82 -> 0.72 K; new in-cycle dip check (any 10 s Tr < 0.75*Tr0 -> cycle rejected); failed cycles now applied=0. Laser unlock 16:11-16:20 during the 16:00 cycle (cycle failed, setpoint kept).
