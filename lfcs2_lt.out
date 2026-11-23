@@ -140,3 +140,25 @@
 2026-11-23 07:31:06 cycle: T0 64.1505 -> 64.1546 C (raw +3.9 mK, corrected +4.1 mK, drift +0.07%, Tr 0.9379 -> 0.9387; 3-pt centre 64.1544 C, peak 0.9380, HWHM 0.699 K) 
 2026-11-23 08:31:00 cycle: T0 64.1546 -> 64.1597 C (raw +5.4 mK, corrected +5.1 mK, drift +0.09%, Tr 0.9379 -> 0.9388; 3-pt centre 64.1595 C, peak 0.9380, HWHM 0.703 K) 
 2026-11-23 09:31:04 cycle: T0 64.1597 -> 64.1651 C (raw +5.6 mK, corrected +5.4 mK, drift -0.06%, Tr 0.9393 -> 0.9388; 3-pt centre 64.1648 C, peak 0.9393, HWHM 0.698 K) 
+2026-11-23 10:30:58 cycle: T0 64.1651 -> 64.1673 C (raw +2.1 mK, corrected +2.2 mK, drift -0.06%, Tr 0.9375 -> 0.9370; 3-pt centre 64.1672 C, peak 0.9375, HWHM 0.702 K) 
+2026-11-23 11:31:02 cycle: T0 64.1673 -> 64.1673 C (raw +0.6 mK, corrected -195.5 mK, drift -56.58%, Tr 0.9385 -> 0.4073; 3-pt centre nan C, peak nan, HWHM nan K) transmission drift -56.6% too large; reverted to old T0
+2026-11-23 11:47:28 fatal: AttributeError("'float' object has no attribute 'numerator'")
+Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor2.py", line 483, in <module>
+    m.loop()
+    ~~~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor2.py", line 443, in loop
+    self.sample()
+    ~~~~~~~~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor2.py", line 329, in sample
+    f"{Pout:.6e},{fsd(pms):.3e},{len(pms)},{tap:.2f},{fsd(taps):.2f},{len(taps)},"
+                  ~~~^^^^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor2.py", line 162, in fsd
+    return statistics.stdev(v) if len(v) > 1 else float("nan")
+           ~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/statistics.py", line 1211, in stdev
+    return _float_sqrt_of_frac(mss.numerator, mss.denominator)
+                               ^^^^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'numerator'
+
+2026-11-23 11:47:28 exit: setpoint left at 64.1673 C

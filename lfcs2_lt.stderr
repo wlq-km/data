@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor2.py", line 483, in <module>
+    m.loop()
+    ~~~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor2.py", line 443, in loop
+    self.sample()
+    ~~~~~~~~~~~^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor2.py", line 329, in sample
+    f"{Pout:.6e},{fsd(pms):.3e},{len(pms)},{tap:.2f},{fsd(taps):.2f},{len(taps)},"
+                  ~~~^^^^^
+  File "/home/lfcs_user/lfcs_code/lfcs2_monitor2.py", line 162, in fsd
+    return statistics.stdev(v) if len(v) > 1 else float("nan")
+           ~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/statistics.py", line 1211, in stdev
+    return _float_sqrt_of_frac(mss.numerator, mss.denominator)
+                               ^^^^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'numerator'
