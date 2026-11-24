@@ -1,0 +1,49 @@
+2026-11-23 13:53:47  connected: THORLABS PAX1000IR1/M SN M00925911 FW 1.2.1 (USB::0x1313::0x8031::M00925911::INSTR)
+2026-11-23 13:53:47  settings: mode 9, wavelength 7.95E-07 (limits 6E-07..1.08E-06), basic scan rate 66.666 Hz, power autorange on, motor 32.91 rev/s after 7.1 s; interval 10 s; writing C:\Users\KilianMüller\pax_logs\pax_20261123_125338.csv
+2026-11-23 13:56:27  error (1): no new scans during the interval
+2026-11-23 13:56:38  error (2): no new scans during the interval
+2026-11-23 13:56:49  error (3): no new scans during the interval
+2026-11-23 13:56:49  reconnecting
+2026-11-23 13:57:03  reconnected: mode 9, wavelength 7.95E-07 (limits 6E-07..1.08E-06), basic scan rate 66.666 Hz, power autorange on, motor 32.81 rev/s after 7.1 s
+2026-11-23 14:08:44  error (1): no new scans during the interval
+2026-11-23 14:08:55  error (2): no new scans during the interval
+2026-11-23 14:09:06  error (3): no new scans during the interval
+2026-11-23 14:09:06  reconnecting
+2026-11-23 14:09:19  reconnected: mode 9, wavelength 7.95E-07 (limits 6E-07..1.08E-06), basic scan rate 66.666 Hz, power autorange on, motor 32.81 rev/s after 7.1 s
+2026-11-23 15:06:34  error (1): no new scans during the interval
+2026-11-23 15:06:45  error (2): no new scans during the interval
+2026-11-23 15:06:56  error (3): no new scans during the interval
+2026-11-23 15:06:56  reconnecting
+2026-11-23 15:07:32  reconnected: mode 9, wavelength 7.95E-07 (limits 6E-07..1.08E-06), basic scan rate 66.666 Hz, power autorange on, motor 0.00 rev/s after 30.4 s
+2026-11-23 15:07:42  error (1): no new scans during the interval
+2026-11-23 15:07:53  error (2): no new scans during the interval
+2026-11-23 15:08:04  error (3): no new scans during the interval
+2026-11-23 15:08:04  reconnecting
+2026-11-23 15:08:41  reconnected: mode 9, wavelength 7.95E-07 (limits 6E-07..1.08E-06), basic scan rate 66.666 Hz, power autorange on, motor 0.00 rev/s after 30.3 s
+2026-11-23 15:08:51  error (1): no new scans during the interval
+2026-11-23 15:09:02  error (2): no new scans during the interval
+2026-11-23 15:09:13  error (3): no new scans during the interval
+2026-11-23 15:09:13  reconnecting
+2026-11-23 15:09:25  reconnected: mode 9, wavelength 7.95E-07 (limits 6E-07..1.08E-06), basic scan rate 66.666 Hz, power autorange on, motor 33.01 rev/s after 6.6 s
+2026-11-23 15:56:39  error (1): no new scans during the interval
+2026-11-23 15:56:50  error (2): no new scans during the interval
+2026-11-23 15:57:01  error (3): no new scans during the interval
+2026-11-23 15:57:01  reconnecting
+2026-11-23 15:57:37  reconnected: mode 9, wavelength 7.95E-07 (limits 6E-07..1.08E-06), basic scan rate 66.666 Hz, power autorange on, motor 0.00 rev/s after 30.3 s
+2026-11-23 15:57:48  error (1): no new scans during the interval
+2026-11-23 15:57:59  error (2): no new scans during the interval
+2026-11-23 15:58:10  error (3): no new scans during the interval
+2026-11-23 15:58:10  reconnecting
+2026-11-23 15:58:22  reconnected: mode 9, wavelength 7.95E-07 (limits 6E-07..1.08E-06), basic scan rate 66.666 Hz, power autorange on, motor 33.11 rev/s after 6.6 s
+2026-11-24 09:18:31  error (1): no new scans during the interval
+2026-11-24 09:18:42  error (2): no new scans during the interval
+2026-11-24 09:18:53  error (3): no new scans during the interval
+2026-11-24 09:18:53  reconnecting
+2026-11-24 09:19:05  reconnected: mode 9, wavelength 7.95E-07 (limits 6E-07..1.08E-06), basic scan rate 66.666 Hz, power autorange on, motor 32.81 rev/s after 6.6 s
+2026-11-24 09:25:36  error (1): no new scans during the interval
+2026-11-24 09:25:47  error (2): no new scans during the interval
+2026-11-24 09:25:58  error (3): no new scans during the interval
+2026-11-24 09:25:58  reconnecting
+2026-11-24 09:26:11  reconnect failed: init USB::0x1313::0x8031::M00925911::INSTR failed: 0xBFFF0015 Le délai d'attente (timeout) a expiré avant que l'opération ne soit achevée.
+2026-11-24 09:26:11  error (4): getLatestScan failed: 0xBFFF0029 La référence du gestionnaire spécifiée n'est pas valide.
+2026-11-24 09:26:11  reconnecting
